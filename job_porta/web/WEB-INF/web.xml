@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>job_portal</servlet-name>
+        <servlet-class>Search</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sign_in</servlet-name>
+        <servlet-class>sign_in</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sign_up</servlet-name>
+        <servlet-class>sign_up</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>signup2</servlet-name>
+        <servlet-class>signup2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>job_portal</servlet-name>
+        <url-pattern>/job_portal</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sign_in</servlet-name>
+        <url-pattern>/sign_in</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sign_up</servlet-name>
+        <url-pattern>/sign_up</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>signup2</servlet-name>
+        <url-pattern>/signup2</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
